@@ -1,0 +1,259 @@
+.date-time-heading {
+    padding: 0.5em 1.5em;
+    font-size: 1.2em;
+    border-bottom: 2px solid var(--orange);
+}
+
+.date-slides-container {
+    display: flex;
+    padding: 2em 1.75em;
+}
+
+.slide {
+    width: 100%;
+    height: 160px;
+    overflow-x: auto;
+}
+
+.slide-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-btn-container i {
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+.slide input[type="radio"], .time-row input[type="radio"] {
+    display: none;
+}
+
+.slide label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 1em;
+    font-size: 1.33em;
+    cursor: pointer;
+    height: 100%;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    min-width: 150px;
+    background-size: cover;
+}
+
+.slide label:hover, .time-row label:hover {
+    background-image: none;
+    background-color: #fff;
+}
+
+.slide label p {
+    text-align: center;
+    user-select: none;
+}
+
+.slide label p:nth-of-type(1) {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(0,0,0,0.75);
+}
+
+.slide label p:nth-of-type(2), .slide label p:nth-of-type(3) {
+    font-size: 1.33em;
+}
+
+.slide label p:nth-of-type(3) {
+    color: green;
+}
+
+.slide-flex-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    gap: 10px;
+}
+
+.left-chevron {
+    padding-right: 1.75em;
+}
+
+.right-chevron {
+    padding-left: 1.75em;
+}
+
+.nonvisible {
+    visibility: hidden;
+}
+
+input[type="radio"]:checked + label {
+    background-image: none;
+    background-color: #fff;
+}
+
+input[type="radio"]:checked + label p:nth-of-type(3) {
+    color: var(--orange);
+}
+
+#booking form input {
+   padding: 0.5em 1.33em;
+   margin: 0.5em 0 1.25em 0;
+   font-size: 1.75em;
+   border-radius: 12px;
+   cursor: pointer;
+   background-color: var(--green);
+}
+
+#timeForm {
+    padding: 1em 5.5em 2em 5.55em;
+}
+
+.time-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#timeForm label {
+    height: 75px;
+    width: 150px;
+    font-size: 1.75em;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#timeForm input[type="radio"]:checked + label {
+    color: var(--orange);
+}
+
+#timeForm input[type="submit"] {
+    margin-top: 1.75em;
+}
+
+.select-service-container {
+    padding: 2em 5.55em;
+}
+
+#booking select {
+    font-family: var(--mainFont);
+    font-weight: 700;
+    font-size: 1.33em;
+}
+
+#timeForm p {
+    font-size: 1.75em;
+    padding: 1em 0 0.33em 0;
+    font-weight: 600;
+}
+
+.unauthorized-main .btns-container {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    padding: 1em 0 3em 0;
+}
+
+.unauthorized-main h1 {
+    padding-top: 2em;
+    font-size: 2em;
+}
+
+.unauthorized-main .btns-container a {
+    padding: 0.67em 1.25em;
+    border-radius: 12px;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 600;
+}
+
+.unauthorized-main .btn-login {
+    background-color: var(--green);
+}
+
+.unauthorized-main .btn-cancel {
+    background-color: #fff;
+}
+
+#bookConfirm h3 {
+    font-size: 2em;
+    text-align: center;
+}
+
+#confirmSection {
+    margin: auto;
+    width: 55%;
+}
+
+.confirmation-form-container {
+    flex: 2;
+}
+
+.appt-info-card {
+    margin: 1em 0 1.5em 0;
+    padding: 1.5em;
+    border-radius: 12px;
+    font-size: 1.5em;
+    border: 2px solid var(--green);
+}
+
+.appt-info-card p {
+    font-weight: 600;
+    padding-top: 0.5em;
+}
+
+#bookConfirm form div {
+    display: flex;
+    justify-content: center;
+}
+
+#bookConfirm h4 {
+    font-size: 1.1em;
+    border-bottom: 1px solid black;
+    font-family: var(--headingFont);
+}
+
+.confirm-service, .confirm-cost {
+    padding-bottom: 1.25em;
+}
+
+#bookConfirm input[type="submit"] {
+    background-color: var(--green);
+    padding: 0.5em 1em;
+    font-family: var(--mainFont);
+    font-size: 1.5em;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#bookConfirm form a {
+    display: inline-block;
+    margin: 1em 0 1.5em 0;
+    font-size: 1.25em;
+}
+
+.earns-points {
+    display: flex;
+    justify-content: space-between;
+}
+
+.earned-points {
+    font-size: 0.8em;
+}
+
+.confirm-cost .cost-points {
+    padding: 0.25em 0 0 0.25em; 
+    font-size: 0.8em;
+}
+
+.cant-book p {
+    font-size: 1.25em;
+    padding-top: 1em;
+}

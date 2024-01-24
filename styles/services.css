@@ -1,0 +1,79 @@
+.dropdown-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1.5em;
+    font-size: 1.25em;
+    color: var(--orange);
+    border-bottom: 2px solid var(--orange);
+    cursor: pointer;
+}
+
+.service-card { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 3px solid var(--green);
+    font-size: 1em;
+}
+
+.title-cost {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-card .title {
+    font-size: 1.3em;
+}
+
+.card-row {
+    display: flex;
+    gap: 1.5em;
+    margin: 1.5em;
+}
+
+.cost-div {
+    text-align: right;
+}
+
+.cost {
+    font-size: 1.25em;
+}
+
+.points-cost {
+    padding-top: 0.25em;
+    font-size: 1em;
+}
+
+.pad-top {
+    padding-top: 0.5em;
+}
+
+.book-btn-div {
+   display: flex;
+   margin-top: 0.25em;
+}
+
+.book-btn-div a {
+    padding: 0.5em 1em;
+    margin-left: auto;
+    background-color: var(--orange);
+    border-radius: 4px;
+}
+
+.points-div p, .description-div p {
+    font-size: 1.1em;
+}
+
+#bundles .card-row {
+    padding-bottom: 2em;
+}
+
+.filler-service-card {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}

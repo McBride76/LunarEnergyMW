@@ -1,0 +1,143 @@
+.main-wrapper {
+    height: 100%;
+    min-height: 850px;
+    display: flex;
+}
+
+.img-wrapper {
+    flex: 2;
+    background-color: #000;
+    background-image: url("../images/texture-leaf.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.form-wrapper {
+    flex: 3;
+    width: 100%;
+    min-height: 100%;
+    max-height: 852.54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+    background-position: right;
+    overflow: auto;
+}
+
+.form-wrapper h2 {
+    font-size: 2.25em;
+    margin-top: 2em;
+}
+
+#loginForm, #registerForm {
+    width: 70%;
+    margin-top: 1.5em;
+}
+
+.form-item-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5em;
+}
+
+#registerForm .form-item-container {
+    padding-bottom: 1em;
+    border-bottom: 2px solid #000;
+}
+
+form label,
+input[type="email"],
+input[type="password"],
+input[type="text"],
+textarea {
+    font-size: 1.5em;
+    font-family: var(--mainFont);
+    font-weight: 500;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#loginForm input, 
+#registerForm input, 
+#contact input,
+#contact textarea {
+    padding: 0.5em;
+}
+
+#loginForm .btn-container, 
+#registerForm .btn-container, 
+#contact .btn-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2.5em;
+}
+
+#loginForm .btn-container input, 
+#registerForm .btn-container input,
+#contact .btn-container input {
+    width: 100%;
+    padding: 0.5em 1.25em;
+    font-size: 1.5em;
+    background-color: var(--orange);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.switch-container {
+    display: flex;
+    justify-content: center;
+    font-size: 1.25em;
+    padding: 2em;
+}
+
+.switch-container a {
+    margin-left: 1em;
+}
+
+.form-item-name, #registerForm .form-item-password, .dob-select-div {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    overflow: auto;
+    gap: 1.5em;
+}
+
+.form-item-name > div, .form-item-password > div, .dob-select-div > div {
+    flex: 1;
+}
+
+.form-item-email > div {
+    display: flex;
+    align-items: center;
+}
+
+.form-item-email > div label {
+    max-width: fit-content;
+    padding-right: 1em;
+}
+
+.form-item-dob > div div {
+    display: flex;
+    flex-direction: column;
+}
+
+.activate-msg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    max-width: 80%;
+    margin: 5em auto;
+    padding: 2em;
+    color: var(--green);
+    font-size: 2em;
+    border-radius: 12px;
+}
+
+.activate-msg-container a {
+    color: inherit;
+}
